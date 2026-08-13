@@ -156,6 +156,27 @@ def inject_custom_css():
         .card-accent {
             border-left: 3px solid var(--accent-violet);
         }
+        .card-title {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+        .card-body {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* Responsive: tighten padding and font sizes on narrow/mobile viewports */
+        @media (max-width: 640px) {
+            .main .block-container { padding-left: 1rem; padding-right: 1rem; }
+            .card { padding: 1.2rem 1.3rem; }
+            .script-cell { min-width: 84px; padding: 1rem 0.4rem 0.8rem 0.4rem; }
+            .script-cell .glyph { font-size: 1.2rem; }
+            h1 { font-size: 1.6rem !important; }
+        }
 
         /* Result banner (replaces default green st.success box) */
         .result-banner {

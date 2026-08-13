@@ -29,20 +29,29 @@ st.divider()
 
 c1, c2, c3 = st.columns(3)
 with c1:
-    st.markdown('<div class="card card-accent">', unsafe_allow_html=True)
-    st.markdown("**Detector**")
-    st.caption("Paste text, get a live prediction with a full confidence breakdown across all 22 classes.")
-    st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown(
+        '<div class="card card-accent">'
+        '<div class="card-title">Detector</div>'
+        '<div class="card-body">Paste text, get a live prediction with a full confidence breakdown across all 22 classes.</div>'
+        '</div>',
+        unsafe_allow_html=True
+    )
 with c2:
-    st.markdown('<div class="card card-accent">', unsafe_allow_html=True)
-    st.markdown("**Performance**")
-    st.caption("Precision, recall, and the full confusion matrix from evaluation on 4,400 held-out samples.")
-    st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown(
+        '<div class="card card-accent">'
+        '<div class="card-title">Performance</div>'
+        '<div class="card-body">Precision, recall, and the full confusion matrix from evaluation on 4,400 held-out samples.</div>'
+        '</div>',
+        unsafe_allow_html=True
+    )
 with c3:
-    st.markdown('<div class="card card-accent">', unsafe_allow_html=True)
-    st.markdown("**How It Works**")
-    st.caption("The dataset, the character-vocabulary tradeoffs, and the architecture, explained end to end.")
-    st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown(
+        '<div class="card card-accent">'
+        '<div class="card-title">How It Works</div>'
+        '<div class="card-body">The dataset, the character-vocabulary tradeoffs, and the architecture, explained end to end.</div>'
+        '</div>',
+        unsafe_allow_html=True
+    )
 
 st.divider()
 st.caption("Built by Omer Farooq · Character-level LSTM · TensorFlow/Keras · Streamlit")
